@@ -69,7 +69,14 @@ public class TestLoanClassTemplate {
 		  
 	  }
 	  if (myLoanAmount < myMonthlyPayment) {
-		  // to do B1 same as B2
+		  // to do B1 same as B2	  if (myLoanAmount < myMonthlyPayment) {
+		  // to do
+		  // caculate the new month's interest based on myLoanAmount and myMonthlyInterestRate
+		  // add the interest paid this month to totalInterest
+		  // increment the month count
+		  interest = myLoanAmount * myMonthlyInterestRate;
+		  totalInterest += interest;
+		  month++;
 	  }
 	  double interestSaved = l.getTotalInterest() - totalInterest;
 	  /*
@@ -125,7 +132,7 @@ public class TestLoanClassTemplate {
 		  // add the interest paid this month to totalInterest
 		  // increment the month count
 		  interest = myLoanAmount * myMonthlyInterestRate;
-		  totalinterest += interest;
+		  totalInterest += interest;
 		  month++;
 
 	  }

@@ -124,6 +124,10 @@ public class TestLoanClassTemplate {
 		  // caculate the new month's interest based on myLoanAmount and myMonthlyInterestRate
 		  // add the interest paid this month to totalInterest
 		  // increment the month count
+		  double lastInterest = myLoanAmount * interest;
+		  totalInterest += lastInterest;
+		  monthCount++;
+
 	  }
 	  double interestSaved = l.getTotalInterest() - totalInterest;
 	  System.out.printf("Total interest $%.2f%nTotal interest saved $%.2f%nTotal months %d %n",

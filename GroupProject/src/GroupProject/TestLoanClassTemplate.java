@@ -124,8 +124,8 @@ public class TestLoanClassTemplate {
 		  // caculate the new month's interest based on myLoanAmount and myMonthlyInterestRate
 		  // add the interest paid this month to totalInterest
 		  // increment the month count
-		  double lastInterest = myLoanAmount * interest;
-		  totalInterest += lastInterest;
+		  interest = myLoanAmount * myMonthlyInterestRate;
+		  totalinterest += interest;
 		  month++;
 
 	  }

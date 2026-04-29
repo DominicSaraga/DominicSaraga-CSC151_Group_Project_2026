@@ -25,7 +25,7 @@ public class TestLoanClassTemplate {
     // Enter extra payment amount
     System.out.print("Enter extra payment amount, for example, 1000.00: ");
     double extraPaymentAmount =  input.nextDouble();
-
+    input.close();
     // Create Loan object
     Loan loan =
       new Loan(annualInterestRate, numberOfYears, loanAmount);

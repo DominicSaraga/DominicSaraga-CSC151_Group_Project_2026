@@ -126,7 +126,7 @@ public class TestLoanClassTemplate {
 		  // increment the month count
 		  double lastInterest = myLoanAmount * interest;
 		  totalInterest += lastInterest;
-		  monthCount++;
+		  month++;
 
 	  }
 	  double interestSaved = l.getTotalInterest() - totalInterest;
